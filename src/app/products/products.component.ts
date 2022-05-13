@@ -62,6 +62,15 @@ export class ProductsComponent{
     productTitle:"Coca-cola Drinks",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus dolor fuga. Nesciunt accusantium minima unde vitae consequuntur cum molestiae?",
     productImage:"https://www.bisleri.com/images/banner-03-product.png",
-  }]
+  }];
+
+  productsSentByChild:string[]=[];
+  count:number = 0;
+  getProductDetailsFromChild(productTitle:string)
+  {
+    this.count++;
+    this.productsSentByChild.push(productTitle);
+  }
+
 }
 
