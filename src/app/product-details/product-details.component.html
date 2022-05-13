@@ -1,8 +1,8 @@
-<div class="card" style="width: 18rem;box-shadow: 5px 5px;">
-    <img class="card-img-top" src="https://img.freepik.com/free-photo/tech-devices-icons-connected-digital-planet-earth_117023-449.jpg?w=200" alt="Card image cap">
+<div class="card zoom" style="width: 18rem;height:450px;">
+    <img class="card-img-top"  style="height: 200px;" src={{productobj.productImage}} alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success"> + Add To Cart</a>
+      <h5 class="card-title">{{productobj.productTitle}}</h5>
+      <p class="card-text">{{productobj.description}}</p>
+      <button href="#" class="btn btn-success" style="text-align: center;"> + Add To Cart</button>
     </div>
 </div>
