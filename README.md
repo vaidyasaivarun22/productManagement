@@ -1,4 +1,4 @@
-# shoping cart(checkout at: https://mellifluous-clafoutis-3ea54c.netlify.app/)
+# shoping cart(checkout at: https://courageous-concha-2c7b6f.netlify.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
