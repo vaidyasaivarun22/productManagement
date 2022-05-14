@@ -6,3 +6,23 @@
   .zoom:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+/* for mobiles */
+  @media only screen and (max-width:600px){
+    .zoom{
+      height:450px;
+      width: 250px;
+    }
+    .prodimg{
+      height: 200px;
+    }
+  }
+  /* for laptops */
+  @media screen and (min-width:1000px){
+    .zoom{
+      height: 500px;
+      width: 18rem;
+    }
+    .prodimg{
+      height: 300px;
+    }
+  }

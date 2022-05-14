@@ -1,8 +1,22 @@
 <button type="button" class="btn btn-warning">
-    <i class="fa-solid fa-cart-plus"></i> <span class="badge badge-light">{{count}}</span>
+  <i class="fa-solid fa-cart-plus"></i> <span class="badge badge-light">{{count}}</span>
 </button>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 m-5">
-    <div class="col" *ngFor="let probj of products">
-        <app-product-details [productobj]=probj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
-    </div>
+<ul class="nav nav-tabs justify-content-evenly mt-3">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="iphones" routerLinkActive="active">iphones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="samsung" routerLinkActive="active">samsung</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="xiaomi" routerLinkActive="active">xiaomi</a>
+  </li>
+</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Nest footer component -->
+<div class="fixposition">
+  <app-footer></app-footer>
 </div>
