@@ -1,9 +1,10 @@
+/* for mobile cart button */
 @media only screen and (max-width:600px){
     button{
         overflow: hidden;
         position: fixed; 
         top: 10px; 
-        right: 60px;
+        right: 80px;
         z-index: 1;
         border-radius: 10px;
     }
@@ -32,4 +33,6 @@ li a{
 li a:visited{
     background-color: #FFC107;
     text-emphasis-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
