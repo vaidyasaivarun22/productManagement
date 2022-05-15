@@ -1,11 +1,13 @@
 .zoom {
     border-radius: 10px;
     transition: transform .2s; /* Animation */
-  }
+} 
   
-  .zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+.upan:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+
+
 
 /* for mobiles */
   @media only screen and (max-width:600px){
@@ -39,6 +41,6 @@
       height: 300px;
     }
     .extra{
-      margin-left: 75px;
+      margin-left: 70px;
     } 
   }

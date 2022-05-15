@@ -1,13 +1,16 @@
-<div class="card bg-dark text-light zoom">
-    <img class="card-img-top prodimg" src={{productobj.productImage}} alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{productobj.productTitle}}</h5>
-      <p class="card-text">{{productobj.description}}</p>
-      <button class="btn btn-warning" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle);"> Add To Cart</button>
+<!-- <div data-aos="fade-up" data-aos-duration="3000"> -->
+  <div class="card bg-dark text-light zoom" data-aos="fade-down-right">
+      <img class="card-img-top prodimg" src={{productobj.productImage}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{productobj.productTitle}}</h5>
+        <p class="card-text">{{productobj.description}}</p>
+        <button class="btn btn-warning upan" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle);"> Add To Cart</button>
+  
+          <button type="button" class="btn btn-md btn-warning extra">
+            <i class="fa-solid fa-cart-plus"></i> <span class="badge badge-light">{{count}}</span>
+          </button>
+      </div>
+  </div>
+<!-- </div> -->
 
-        <button type="button" class="btn btn-md btn-warning extra">
-          <i class="fa-solid fa-cart-plus"></i> <span class="badge badge-light">{{count}}</span>
-        </button>
-    </div>
-</div>
 
