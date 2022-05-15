@@ -8,10 +8,17 @@ import { product } from '../models/product.model';
   styleUrls: ['./samsung.component.css']
 })
 export class SamsungComponent implements OnInit{
-    constructor(private dsObj:DataService)
-    {}
-    samsung:product[]=[];
-    ngOnInit(){
-      this.samsung = this.dsObj.getSamsungData();
-    }
+  samsung:product[]=[];
+  constructor(private dsObj:DataService){
+
+  }
+  ngOnInit(){
+    this.dsObj.getSamsungData().subscribe
+    (
+      (data:product[])=>{
+        this.samsung= data
+      },
+      (err: any)=>console.log('error is: ',err)
+    )
+  }
 }

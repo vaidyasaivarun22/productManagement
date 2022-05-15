@@ -10,12 +10,16 @@ import { product } from '../models/product.model';
 export class XiaomiComponent implements OnInit{
 
   xiaomi:product[]=[];
-  constructor(private dsObj:DataService)
-  {
+  constructor(private dsObj:DataService){
 
   }
   ngOnInit(){
-    this.xiaomi = this.dsObj.getXiaomiData();
+    this.dsObj.getXiaomiData().subscribe
+    (
+      (data:product[])=>{this.xiaomi= data},
+      
+      (err: any)=>console.log('error is: ',err)
+    )
   }
 
 }

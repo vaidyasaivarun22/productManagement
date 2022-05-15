@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { DataService } from '../data.service';
 import { product } from '../models/product.model';
 
@@ -13,7 +14,14 @@ export class IphonesComponent implements OnInit{
 
   }
   ngOnInit(){
-    this.iphones=this.dsObj.getIphonesData();
+    this.dsObj.getIphonesData().subscribe
+    (
+      (data:product[])=>
+      {
+        this.iphones = data;
+      },
+      (err: any)=>{console.log('error is: ',err)}
+    )
   }
 
 }
