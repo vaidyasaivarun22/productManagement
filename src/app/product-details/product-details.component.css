@@ -20,7 +20,7 @@
       height: 200px;
     }
     .extra{
-      margin-left: 5px;
+      margin-left: 30px;
     } 
   }
   @media screen and (min-width:601px) and (max-width:768px)
@@ -30,6 +30,10 @@
       margin: auto;
       margin-top: 5px;
     } 
+    .upan:hover{
+      display: flex;
+      text-align: center;
+    }
   }
   /* for laptops */
   @media screen and (min-width:992px){
