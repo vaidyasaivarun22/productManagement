@@ -14,6 +14,8 @@ import { IphonesComponent } from './iphones/iphones.component';
 import { SamsungComponent } from './samsung/samsung.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     IphonesComponent,
     SamsungComponent,
     XiaomiComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
