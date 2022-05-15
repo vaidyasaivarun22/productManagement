@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { product } from '../models/product.model';
-
+import {TestService} from '../test.service';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -8,13 +8,21 @@ import { product } from '../models/product.model';
 })
 export class ProductDetailsComponent {
 
-  @Input()
-  productobj!: product;
-  
-  @Output() myEvent = new EventEmitter();
-  sendProductToParent(productTitle:string)
-  {
-    this.myEvent.emit(productTitle);
+  count:number=0;
+  count2:number=0;
+  constructor(private tsObj:TestService){
+      // this.tsObj.setData(this.count);
+    }
+    @Input()
+    productobj!: product;
+    // @Output() myEvent = new EventEmitter();
+    sendProductToParent(productTitle:string)
+    {
+      this.count++;
+      // this.myEvent.emit(productTitle);
+    }
+    ngOnInit(){
+    this.tsObj.setData(this.count2);
   }
 }
 

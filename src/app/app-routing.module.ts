@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { IphonesComponent } from './iphones/iphones.component';
 import { LoginComponent } from './login/login.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { SamsungComponent } from './samsung/samsung.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
     {path:'xiaomi',component:XiaomiComponent},
     {path:'',redirectTo:'/products/iphones',pathMatch:'full'}
   ]},
-  {path:'',redirectTo:'/login',pathMatch:'full'}
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  {path:'**',component:PagenotfoundComponent}
 ];
 
 @NgModule({

@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { IphonesComponent } from './iphones/iphones.component';
 import { SamsungComponent } from './samsung/samsung.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { XiaomiComponent } from './xiaomi/xiaomi.component';
     HomeComponent,
     IphonesComponent,
     SamsungComponent,
-    XiaomiComponent
+    XiaomiComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

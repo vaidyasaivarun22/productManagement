@@ -3,6 +3,11 @@
     <div class="card-body">
       <h5 class="card-title">{{productobj.productTitle}}</h5>
       <p class="card-text">{{productobj.description}}</p>
-      <button class="btn btn-warning" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle)"> <i class="fa-solid fa-circle-plus"></i> Add To Cart</button>
+      <button class="btn btn-warning" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle);"> Add To Cart</button>
+
+        <button type="button" class="btn btn-md btn-warning extra">
+          <i class="fa-solid fa-cart-plus"></i> <span class="badge badge-light">{{count}}</span>
+        </button>
     </div>
 </div>
+
