@@ -1,4 +1,9 @@
 /* for mobile simple cart button */
+.mainCart:hover{
+    transform: scale(1.1); ;
+}
+
+/* main cart positioning for mobiles */
 @media only screen and (max-width:600px){
     button{
         overflow: hidden;
