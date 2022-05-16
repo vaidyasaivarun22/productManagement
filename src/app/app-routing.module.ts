@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { IphonesComponent } from './iphones/iphones.component';
 import { LoginComponent } from './login/login.component';
@@ -7,6 +8,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { SamsungComponent } from './samsung/samsung.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
 
 const routes: Routes = [
@@ -20,6 +22,8 @@ const routes: Routes = [
     {path:'xiaomi',component:XiaomiComponent},
     {path:'',redirectTo:'/products/iphones',pathMatch:'full'}
   ]},
+  {path:'admin',component:AdminComponent},
+  {path:'admin/:id',component:UserdetailsComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'**',component:PagenotfoundComponent}
 ];

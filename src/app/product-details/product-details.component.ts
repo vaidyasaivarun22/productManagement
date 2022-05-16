@@ -10,6 +10,7 @@ export class ProductDetailsComponent {
 
   count:number=0;
   count2:number=0;
+  change:number=1;
   constructor(private tsObj:TestService){
       // this.tsObj.setData(this.count);
     }
@@ -19,6 +20,7 @@ export class ProductDetailsComponent {
     sendProductToParent(productTitle:string)
     {
       this.count++;
+      this.change=0;
       // this.myEvent.emit(productTitle);
     }
     ngOnInit(){

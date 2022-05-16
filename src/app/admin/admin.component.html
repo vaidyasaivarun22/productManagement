@@ -1,0 +1,18 @@
+<table class="table text-dark text-center">
+    <thead>
+        <tr>
+            <th>userId</th>
+            <th>Id</th>
+            <th>title</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let pstObj of myPosts">
+                    <td>
+                        <button class="btn btn-sm btn-warning" (click)="onSelectIdButton(pstObj.id)">
+                            {{pstObj.id}}
+                        </button></td>
+            </tr>
+        </tbody>
+</table>

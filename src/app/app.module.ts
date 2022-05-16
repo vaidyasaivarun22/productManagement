@@ -16,6 +16,8 @@ import { XiaomiComponent } from './xiaomi/xiaomi.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
+import { AdminComponent } from './admin/admin.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     SamsungComponent,
     XiaomiComponent,
     PagenotfoundComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AdminComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -13,14 +13,14 @@ export class DataService {
   constructor(private hc:HttpClient) { }
   getIphonesData():Observable<product[]>
   {
-    return this.hc.get<product[]>("assets/iphones.json");
+    return this.hc.get<product[]>("http://localhost:3000/iphones");
   };
   getSamsungData():Observable<product[]>
   {
-    return this.hc.get<product[]>("assets/samsung.json");
+    return this.hc.get<product[]>("http://localhost:3000/samsung");
   };
   getXiaomiData():Observable<product[]>
   {
-    return this.hc.get<product[]>("assets/xiaomi.json");
+    return this.hc.get<product[]>("http://localhost:3000/xiaomi");
   }
 }
