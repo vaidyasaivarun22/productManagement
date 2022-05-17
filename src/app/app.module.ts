@@ -14,8 +14,6 @@ import { IphonesComponent } from './iphones/iphones.component';
 import { SamsungComponent } from './samsung/samsung.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import {NgxSpinnerModule} from 'ngx-spinner';
-import { AdminComponent } from './admin/admin.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { DescriptionComponent } from './description/description.component';
 
@@ -33,7 +31,6 @@ import { DescriptionComponent } from './description/description.component';
     SamsungComponent,
     XiaomiComponent,
     PagenotfoundComponent,
-    AdminComponent,
     UserdetailsComponent,
     DescriptionComponent
   ],
@@ -41,7 +38,6 @@ import { DescriptionComponent } from './description/description.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

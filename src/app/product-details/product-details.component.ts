@@ -27,13 +27,13 @@ export class ProductDetailsComponent {
     this.tsObj.setData(this.count2);
   }
   onSelectId(id:number){
-      if(id<=11)
+      if(id<=100)
           this.router.navigateByUrl('products/iphones/'+id);
-      else if(id<=24)
+      else if(id<=200)
       {
         this.router.navigateByUrl('products/samsung/'+id);
       }
-      else
+      else if(id<=300)
       {
         this.router.navigateByUrl('products/xiaomi/'+id);
       }
