@@ -29,13 +29,18 @@ export class ProductDetailsComponent {
   onSelectId(id:number){
       if(id<=100)
           this.router.navigateByUrl('products/iphones/'+id);
+          //this.router.navigateByUrl("assets/iphones.json");
+
       else if(id<=200)
       {
         this.router.navigateByUrl('products/samsung/'+id);
+        //this.router.navigateByUrl("assets/samsung.json");
+
       }
       else if(id<=300)
       {
         this.router.navigateByUrl('products/xiaomi/'+id);
+        //this.router.navigateByUrl("assets/xiaomi.json");
       }
   }
 }
