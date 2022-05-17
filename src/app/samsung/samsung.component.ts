@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { product } from '../models/product.model';
+import { product } from '../models/product_id.model';
 
 @Component({
   selector: 'app-samsung',

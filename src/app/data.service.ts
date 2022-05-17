@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { product } from './models/product.model';
+import { product } from './models/product_id.model';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
@@ -13,14 +13,14 @@ export class DataService {
   constructor(private hc:HttpClient) { }
   getIphonesData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/iphones");
+    return this.hc.get<product[]>("assets/iphones.json");
   };
   getSamsungData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/samsung");
+    return this.hc.get<product[]>("assets/samsung.json");
   };
   getXiaomiData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/xiaomi");
+    return this.hc.get<product[]>("assets/xiaomi.json");
   }
 }

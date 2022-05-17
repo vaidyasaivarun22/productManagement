@@ -14,10 +14,10 @@ import { IphonesComponent } from './iphones/iphones.component';
 import { SamsungComponent } from './samsung/samsung.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { SpinnerComponent } from './spinner/spinner.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import { AdminComponent } from './admin/admin.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +33,9 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     SamsungComponent,
     XiaomiComponent,
     PagenotfoundComponent,
-    SpinnerComponent,
     AdminComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

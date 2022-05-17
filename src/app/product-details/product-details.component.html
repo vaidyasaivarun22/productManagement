@@ -1,6 +1,8 @@
 <!-- <div data-aos="fade-up" data-aos-duration="3000"> -->
   <div class="card bg-dark text-light zoom" data-aos="fade-down-right">
+    <a (click)="onSelectId(productobj.id)">
       <img class="card-img-top prodimg" src={{productobj.productImage}} alt="Card image cap">
+    </a>
       <div class="card-body">
         <h5 class="card-title">{{productobj.productTitle}}</h5>
         <p class="card-text">{{productobj.description}}</p>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { DescriptionComponent } from './description/description.component';
 import { HomeComponent } from './home/home.component';
 import { IphonesComponent } from './iphones/iphones.component';
 import { LoginComponent } from './login/login.component';
@@ -16,12 +17,16 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'products',component:ProductsComponent,children:[
+  {path:'products',component:ProductsComponent,
+  children:[
     {path:'iphones',component:IphonesComponent},
+    {path:'iphones/:id',component:DescriptionComponent},
     {path:'samsung',component:SamsungComponent},
+    {path:'samsung/:id',component:DescriptionComponent},
     {path:'xiaomi',component:XiaomiComponent},
-    {path:'',redirectTo:'/products/iphones',pathMatch:'full'}
-  ]},
+    {path:'xiaomi/:id',component:DescriptionComponent},
+    {path:'',redirectTo:'/products/iphones',pathMatch:'full'},
+          ]},
   {path:'admin',component:AdminComponent},
   {path:'admin/:id',component:UserdetailsComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
