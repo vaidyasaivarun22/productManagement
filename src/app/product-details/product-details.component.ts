@@ -35,12 +35,11 @@ export class ProductDetailsComponent {
       {
         this.router.navigateByUrl('products/samsung/'+id);
         //this.router.navigateByUrl("assets/samsung.json");
-
       }
       else if(id<=300)
       {
         this.router.navigateByUrl('products/xiaomi/'+id);
-        //this.router.navigateByUrl("assets/xiaomi.json");
+        //this.router.navigateByUrl("assets/xiaomi.json"); 
       }
   }
 }
