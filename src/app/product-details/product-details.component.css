@@ -23,7 +23,7 @@ a{
       height: 200px;
     }
     .extra{
-      margin-left: 30px;
+      margin-left: 25px;
     } 
   }
   @media screen and (min-width:601px) and (max-width:768px)
@@ -48,6 +48,6 @@ a{
       height: 250px;
     }
     .extra{
-      margin-left: 70px;
+      margin-left: 60px;
     } 
   }

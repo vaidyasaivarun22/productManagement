@@ -20,8 +20,14 @@ export class ProductDetailsComponent {
     // @Output() myEvent = new EventEmitter();
     sendProductToParent(productTitle:string)
     {
-      this.count++;
+      if(this.count <= 4)
+        this.count++;
       // this.myEvent.emit(this.count);
+    }
+    removeFromCart()
+    {
+      if(this.count > 0)
+      this.count--;
     }
     ngOnInit(){
     this.tsObj.setData(this.count2);
