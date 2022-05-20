@@ -1,10 +1,10 @@
 {
   "iphones": [
     {
-      "id": 1,
       "productTitle": "Apple iPhone 13 (128GB) - Blue",
       "description": "-13% ₹69,900.00 M.R.P.: ₹79,900.00. Inclusive of all taxes. EMI starts at ₹3,290. No Cost EMI available",
-      "productImage": "https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg"
+      "productImage": "https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg",
+      "id": 1
     },
     {
       "id": 2,
@@ -68,8 +68,8 @@
     },
     {
       "productTitle": "Apple iPhone 11 (64GB) - White",
-      "productImage": "https://m.media-amazon.com/images/I/71QE00iB9IL._SX679_.jpg",
       "description": "M.R.P.:₹45,900.00.Inclusive of all taxes EMI starts at ₹2,161. No Cost EMI available",
+      "productImage": "https://m.media-amazon.com/images/I/71QE00iB9IL._SX679_.jpg",
       "id": 12
     }
   ],
@@ -85,12 +85,6 @@
       "productTitle": "Samsung Galaxy M335G (Mystique Green ,8GB,128GB)",
       "description": "M.R.P.:₹25,999.00.Inclusive of all taxes EMI starts at ₹918. No Cost EMI available",
       "productImage": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzgeinu/gallery/in-galaxy-m53-5g-sm-m536-sm-m536bzgeinu-532184026?$730_584_PNG$"
-    },
-    {
-      "id": 103,
-      "productTitle": "Samsung Galaxy M53 5G (Deep Ocean Blue, 6GB, 128GB)",
-      "description": "M.R.P.:₹32,999.Inclusive of all taxes EMI starts at ₹1,247. No Cost EMI available",
-      "productImage": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzbfinu/gallery/in-galaxy-m53-5g-sm-m536-421705-sm-m536bzbfinu-532181615?$730_584_PNG$"
     },
     {
       "id": 104,
@@ -156,8 +150,8 @@
   "xiaomi": [
     {
       "id": 201,
-      "productTitle": "Xiaomi 11T Pro 5G(Celestial Magic,8GB,128GB)",
       "description": "M.R.P.:₹38,999.Inclusive of all taxes EMI starts @₹1,836.No Cost EMI available",
+      "productTitle": "X11T Pro 5G(Celestial Magic,8GB,128GB)",
       "productImage": "https://m.media-amazon.com/images/I/71Od5yJbohL._SX679_.jpg"
     },
     {
@@ -210,8 +204,8 @@
     },
     {
       "id": 210,
+      "description": "-13% ₹69,900.00 M.R.P.: ₹79,900.00. Inclusive of all taxes. EMI starts at ₹3,290. No Cost EMI available",
       "productTitle": "Xiaomi 11i 5G (Camo Green, 8GB RAM, 128GB Storage)",
-      "description": "Curently out of stock",
       "productImage": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1641445060.14783419.png"
     }
   ]

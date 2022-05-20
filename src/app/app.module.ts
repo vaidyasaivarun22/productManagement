@@ -14,13 +14,9 @@ import { IphonesComponent } from './iphones/iphones.component';
 import { SamsungComponent } from './samsung/samsung.component';
 import { XiaomiComponent } from './xiaomi/xiaomi.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import {NgxSpinnerModule} from 'ngx-spinner';
 import { AdminComponent } from './admin/admin.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { DescriptionComponent } from './description/description.component';
-import { AddnewiphoneComponent } from './addnewiphone/addnewiphone.component';
-import { AddnewsamsungComponent } from './addnewsamsung/addnewsamsung.component';
-import { AddnewxiaomiComponent } from './addnewxiaomi/addnewxiaomi.component';
 import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
@@ -39,10 +35,7 @@ import { FormsModule } from '@angular/forms';
     PagenotfoundComponent,
     AdminComponent,
     UserdetailsComponent,
-    DescriptionComponent,
-    AddnewiphoneComponent,
-    AddnewsamsungComponent,
-    AddnewxiaomiComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

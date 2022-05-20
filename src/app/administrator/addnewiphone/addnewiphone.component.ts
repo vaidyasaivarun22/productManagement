@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { mobile } from '../models/mobile.model';
-import { DataService } from '../data.service';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/data.service';
+import { mobile } from 'src/app/models/mobile.model';
 
 @Component({
   selector: 'app-addnewiphone',
@@ -22,7 +22,7 @@ export class AddnewiphoneComponent implements OnInit {
       this.dsObj.createNewIphoneData(this.mobileModel).subscribe(
         data=>{
           alert('New Iphone added to collection');
-          this.router.navigateByUrl('products/iphones');
+          // this.router.navigateByUrl('products/iphones');//Enable if u want to redirect after adding new
         },
         err=>{
           console.log("error in rading data",err);
@@ -35,4 +35,5 @@ export class AddnewiphoneComponent implements OnInit {
       alert("Some Fields are missing data. Ensure all fields are filled");
     }
   }
+
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from '../data.service';
-import { mobile } from '../models/mobile.model';
+import { DataService } from 'src/app/data.service';
+import { mobile } from 'src/app/models/mobile.model';
 
 @Component({
   selector: 'app-addnewxiaomi',
@@ -22,7 +22,7 @@ export class AddnewxiaomiComponent implements OnInit {
       this.dsObj.createNewXiaomiData(this.newObj).subscribe(
         data=>{
           alert("New Xiaomi Mobile Added To Existing Collection");
-          this.router.navigateByUrl('products/xiaomi');
+          // this.router.navigateByUrl('products/xiaomi');//Enable to redirect after adding new mobile
         },
         err=>{console.log('Error in reading data',err)}
       )
@@ -32,4 +32,5 @@ export class AddnewxiaomiComponent implements OnInit {
       alert("Some Fields are missing data. Ensure all fields are filled");
     }
   }
+
 }

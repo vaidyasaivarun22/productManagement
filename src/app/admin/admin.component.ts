@@ -1,6 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FakedataService } from '../fakedata.service';
-import { posts } from '../models/posts.model';
 import { Router } from '@angular/router'
 
 @Component({
@@ -8,26 +6,21 @@ import { Router } from '@angular/router'
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class AdminComponent implements OnInit,OnDestroy{
-  delObj:any;
+export class AdminComponent implements OnInit{
+  constructor(private router:Router) { }
 
-  constructor(private fsObj:FakedataService,private router:Router) { }
-  myPosts:posts[]=[];
   ngOnInit(): void {
-    this.delObj= this.fsObj.getPosts().subscribe(
-      (data:posts[])=>{
-        this.myPosts=data;
-      },
-      (err:any)=>{console.log('err in getting post data'+err)}
-    )
   }
-  ngOnDestroy(): void {
-      this.delObj.unsubscribe();
+  onLogin(userobj:any)
+  {
+      let userLoginObj = userobj.value;
+      if(userLoginObj.username == 'admin' && userLoginObj.password == 'admin')
+      {
+          this.router.navigateByUrl('/administrator');
+      }
+      else
+      {
+          alert("Inavlid credentials!!!");
+      }
   }
-
-  onSelectIdButton(id:number){ 
-      this.router.navigateByUrl('admin/'+id);
-  } 
-
-
 }
