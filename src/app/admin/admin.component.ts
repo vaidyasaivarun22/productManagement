@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-admin',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router'
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit{
-  constructor(private router:Router) { }
+  constructor(private router:Router,public dsObj:DataService) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +17,8 @@ export class AdminComponent implements OnInit{
       let userLoginObj = userobj.value;
       if(userLoginObj.username == 'admin' && userLoginObj.password == 'admin')
       {
+          localStorage.setItem("username","admin");
+          localStorage.setItem("password","admin");
           this.router.navigateByUrl('/administrator');
       }
       else

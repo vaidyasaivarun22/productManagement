@@ -87,6 +87,7 @@ export class DataService {
   {
     return this.hc.delete<number>("http://localhost:3000/xiaomi/"+deleteXiaomiObj);
   }
+
   // ---------------------------------------------------
   // user login status
   userLoginStatus():boolean
@@ -96,10 +97,19 @@ export class DataService {
     else
       return true;
   }
-  //user Logout
+  //user & Admin Logout
   userLogout(){
-    localStorage.removeItem('username');
-    localStorage.removeItem('password');
-    localStorage.removeItem('email');
+    localStorage.clear();
   }
+
+  // ------------------------------------------------------
+  //Admin login status
+  adminLoginStatus():boolean
+  {
+    if(localStorage.getItem("username")==null && localStorage.getItem("password")==null)
+      return false;
+    else
+      return true;
+  }
+
 }
