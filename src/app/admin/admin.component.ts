@@ -17,8 +17,8 @@ export class AdminComponent implements OnInit{
       let userLoginObj = userobj.value;
       if(userLoginObj.username == 'admin' && userLoginObj.password == 'admin')
       {
-          localStorage.setItem("username","admin");
-          localStorage.setItem("password","admin");
+          localStorage.setItem("adminUsername","admin");
+          localStorage.setItem("adminPassword","admin");
           this.router.navigateByUrl('/administrator');
       }
       else

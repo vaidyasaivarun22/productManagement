@@ -106,10 +106,10 @@ export class DataService {
   //Admin login status
   adminLoginStatus():boolean
   {
-    if(localStorage.getItem("username")==null && localStorage.getItem("password")==null)
-      return false;
-    else
+    if(localStorage.getItem("adminUsername")=="admin" && localStorage.getItem("adminPassword")=="admin")
       return true;
+    else
+      return false;
   }
 
 }

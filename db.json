@@ -43,10 +43,10 @@
       "productImage": "https://m.media-amazon.com/images/I/71E5zB1qbIL._SX522_.jpg"
     },
     {
-      "id": 8,
       "productTitle": "Apple iPhone 12 Mini (64GB) - Green",
       "description": "₹59,900.00 Inclusive of all taxes. EMI starts at ₹2,820. No Cost EMI available",
-      "productImage": "https://m.media-amazon.com/images/I/71i+-WmxHWL._SL1500_.jpg"
+      "productImage": "https://m.media-amazon.com/images/I/71i+-WmxHWL._SL1500_.jpg",
+      "id": 8
     },
     {
       "id": 9,
@@ -151,7 +151,7 @@
     {
       "id": 201,
       "description": "M.R.P.:₹38,999.Inclusive of all taxes EMI starts @₹1,836.No Cost EMI available",
-      "productTitle": "X11T Pro 5G(Celestial Magic,8GB,128GB)",
+      "productTitle": "Xiaomi 11T Pro 5G(Celestial Magic,8GB,128GB)",
       "productImage": "https://m.media-amazon.com/images/I/71Od5yJbohL._SX679_.jpg"
     },
     {
