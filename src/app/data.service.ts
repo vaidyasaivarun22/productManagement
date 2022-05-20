@@ -113,4 +113,7 @@ export class DataService {
       return false;
   }
 
+  getUserRating():number{
+    return 0;
+  }
 }

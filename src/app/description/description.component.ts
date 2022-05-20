@@ -35,9 +35,21 @@ export class DescriptionComponent implements OnInit {
       }
     }
   }
+  countRating:number=254;
+  ratingStatus:boolean=false;
   userRated()
   {
-    alert("Rating Submission Successfull !!!");
-    alert("Your rating would be posted after verifying by merchant to ensure genune purchase ratings :-)");
+    if(!this.dsObj.userLoginStatus())
+    {
+      alert("Your rating doesn't count because you didn't login :-(")
+    }
+    else{
+      this.ratingStatus=true;
+      this.countRating++;
+      alert("Rating Submission Successfull !!!");
+      alert("Thanks for rating us.Congrats BTW :) ")
+    // alert("Your rating would be posted after verifying by merchant to ensure genune purchase ratings :-)");
   }
+
+}
 }

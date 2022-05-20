@@ -53,7 +53,7 @@ export class ProductDetailsComponent {
   {
     if(!this.dsObj.userLoginStatus())
     {
-        let result=confirm('Login to make purchaces!!!');
+        let result=confirm('Login to make purchases!!!');
         if(result)
         {
           this.router.navigateByUrl('login');
