@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 import { product } from '../models/product_id.model';
 import {TestService} from '../test.service';
 @Component({
@@ -12,7 +13,7 @@ export class ProductDetailsComponent {
   count:number=0;
   count2:number=0;
   change:number=1;
-  constructor(private tsObj:TestService,private router:Router){
+  constructor(private tsObj:TestService,private router:Router,public dsObj:DataService){
       // this.tsObj.setData(this.count);
     }
     @Input()
@@ -47,6 +48,21 @@ export class ProductDetailsComponent {
         this.router.navigateByUrl('products/xiaomi/'+id);
         //this.router.navigateByUrl("assets/xiaomi.json"); 
       }
+  }
+  checkLoginStatus()
+  {
+    if(!this.dsObj.userLoginStatus())
+    {
+        let result=confirm('Login to make purchaces!!!');
+        if(result)
+        {
+          this.router.navigateByUrl('login');
+        }
+        else
+        {
+          this.count--;
+        }
+    }
   }
 }
 

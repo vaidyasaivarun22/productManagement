@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './admin.guard';
 import { AdminComponent } from './admin/admin.component';
 import { AdministratorComponent } from './administrator/administrator.component';
 import { DescriptionComponent } from './description/description.component';
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path:'admin',component:AdminComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'},
 
-  { path: 'administrator', loadChildren: () => import('./administrator/administrator.module').then(m => m.AdministratorModule) },
+  { path: 'administrator', loadChildren: () => import('./administrator/administrator.module').then(m => m.AdministratorModule),canActivate:[AdminGuard]},
   {path:'**',component:PagenotfoundComponent}
 ];
 

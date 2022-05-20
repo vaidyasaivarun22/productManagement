@@ -6,7 +6,7 @@
       <div class="card-body">
         <h5 class="card-title">{{productobj.productTitle}}</h5>
         <p class="card-text">{{productobj.description}}</p>
-        <button class="btn btn-warning upan" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle);"> Add To Cart</button>
+        <button class="btn btn-warning upan" style="text-align: center;" (click)="sendProductToParent(productobj.productTitle);checkLoginStatus()"> Add To Cart</button>
   
           <button type="button" class="btn btn-md btn-warning extra" (click)="removeFromCart()">
             <img src="../../assets/cartMinus.png" width="30px" height="25px"> <span class="badge badge-light">{{count}}</span>

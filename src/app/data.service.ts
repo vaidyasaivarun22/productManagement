@@ -16,22 +16,22 @@ export class DataService {
   // 1.For iphones
   getIphonesData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/iphones");
-    // return this.hc.get<product[]>("assets/iphones.json");//For running without server enable this
+    // return this.hc.get<product[]>("http://localhost:3000/iphones");
+    return this.hc.get<product[]>("assets/iphones.json");//For running without server enable this
 
   };
   // 2.for samsung
   getSamsungData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/samsung");
-    // return this.hc.get<product[]>("assets/samsung.json");//For running without server enable this
+    // return this.hc.get<product[]>("http://localhost:3000/samsung");
+    return this.hc.get<product[]>("assets/samsung.json");//For running without server enable this
 
   };
   // 3.For Xiaomi
   getXiaomiData():Observable<product[]>
   {
-    return this.hc.get<product[]>("http://localhost:3000/xiaomi");
-    // return this.hc.get<product[]>("assets/xiaomi.json");//For running without server enable this
+    // return this.hc.get<product[]>("http://localhost:3000/xiaomi");
+    return this.hc.get<product[]>("assets/xiaomi.json");//For running without server enable this
   }
 
 
