@@ -11,7 +11,8 @@ import { mobile } from './models/mobile.model';
 
 export class DataService {
 
-  constructor(private hc:HttpClient) { }
+  constructor(private hc:HttpClient) {
+   }
   //Get Reguest-->Reading purpose
   // 1.For iphones
   getIphonesData():Observable<product[]>

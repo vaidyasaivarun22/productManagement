@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DataService } from '../data.service';
 import { InsidecardService } from '../insidecard.service';
 import { product } from '../models/product_id.model';
 
@@ -10,8 +11,9 @@ import { product } from '../models/product_id.model';
 })
 export class DescriptionComponent implements OnInit {
   postObj!:product;
-  constructor(private ar:ActivatedRoute,private ic:InsidecardService) { }
-
+  constructor(private ar:ActivatedRoute,private ic:InsidecardService,public dsObj:DataService,private router:Router) {
+  }
+  
   ngOnInit(): void {
     let id = this.ar.snapshot.params['id'];
     //get data of card which has id as above ..
@@ -22,4 +24,20 @@ export class DescriptionComponent implements OnInit {
       (err:any)=>{'error in reading data is:'+err}
     );
   }  
+  checkLogin()
+  {
+    if(!this.dsObj.userLoginStatus())
+    {
+      let result=confirm('Please Login First to rate!!!');
+      if(result)
+      {
+        this.router.navigateByUrl('login');
+      }
+    }
+  }
+  userRated()
+  {
+    alert("Rating Submission Successfull !!!");
+    alert("Your rating would be posted after verifying by merchant to ensure genune purchase ratings :-)");
+  }
 }
