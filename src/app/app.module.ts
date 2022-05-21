@@ -18,9 +18,9 @@ import { AdminComponent } from './admin/admin.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { DescriptionComponent } from './description/description.component';
 import { FormsModule } from '@angular/forms';
-import { SearchPipe } from './search.pipe';
 import { SearchSamsungPipe } from './search-samsung.pipe';
 import { SearchXiaomiPipe } from './search-xiaomi.pipe'; 
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -39,15 +39,15 @@ import { SearchXiaomiPipe } from './search-xiaomi.pipe';
     AdminComponent,
     UserdetailsComponent,
     DescriptionComponent,
-    SearchPipe,
     SearchSamsungPipe,
-    SearchXiaomiPipe
+    SearchXiaomiPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

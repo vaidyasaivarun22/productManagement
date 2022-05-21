@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { DataService } from '../data.service';
 import { product } from '../models/product_id.model';
 import { NgxSpinnerService } from 'ngx-spinner';
+
 @Component({
   selector: 'app-iphones',
   templateUrl: './iphones.component.html',
@@ -11,6 +12,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class IphonesComponent implements OnInit{
   iphones:product[]=[];
   searchTerm!: string;
+  p=1;
   constructor(private dsObj:DataService,private SpinnerService:NgxSpinnerService){
 
   }

@@ -25,3 +25,11 @@ input{
     border-radius: 10px;
     background-color: aliceblue;
 }
+.mk{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.mk input{
+    text-align: center;
+    font-style: italic;
+}

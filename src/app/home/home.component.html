@@ -4,7 +4,7 @@
 
   <marquee direction="up" scrollamount="5" behavior="alternate"><h2 class="text-center text-light"> Today's Offer Zone</h2></marquee></div>
 <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-5 extra" style="padding-left: 0px;">
-  <div class="card bg-dark text-light cd ml-5" data-aos="fade-down-right" (click)="bannerClick()">
+  <div class="card bg-dark text-light cd ml-5" data-aos="fade-down-right" (click)="iphonebannerClick()">
     <img class="card-img-top prodimg" src="https://m.media-amazon.com/images/I/71QE00iB9IL._SX679_.jpg" alt="Card image cap">
     <div class="ribbon-bookmark-v ribbon-sm text-vertical dk"><i>Clearance Sale!</i></div>
     <div class="card-body">
@@ -13,7 +13,7 @@
       <a href="#" class="btn btn-warning"> Grab Now</a>
     </div>
   </div>
-  <div class="card bg-dark text-light cd mk" data-aos="zoom-in-right" (click)="bannerClick()">
+  <div class="card bg-dark text-light cd mk" data-aos="zoom-in-right" (click)="samsungbannerClick()">
     <img class="card-img-top prodimg" src="https://m.media-amazon.com/images/I/8131pwAojZL._SX569_.jpg" alt="Card image cap">
     <div class="ribbon-bookmark-v ribbon-sm text-vertical"><i>Discount(27% Off) :)</i></div>
     <div class="card-body">
@@ -22,7 +22,7 @@
       <a href="#" class="btn btn-warning"> Grab Now</a>
     </div>
   </div>
-  <div class="card bg-dark text-light cd" data-aos="zoom-in-left" (click)="bannerClick()">
+  <div class="card bg-dark text-light cd" data-aos="zoom-in-left" (click)="xiaomibannerClick()">
     <img class="card-img-top prodimg" src="https://m.media-amazon.com/images/I/71lYm08fIZL._SX569_.jpg" alt="Card image cap">
     <div class="ribbon-bookmark-v ribbon-sm text-vertical tb"><i>New Arrival !!!</i></div>
     <div class="card-body">
@@ -32,5 +32,8 @@
     </div>
   </div>
 </div>
+</div>
+<div class="container text-center">
+  <pagination-controls (pageChange)="p=$event">1</pagination-controls>
 </div>
 

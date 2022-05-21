@@ -9,6 +9,7 @@ import { product } from '../models/product_id.model';
 })
 export class XiaomiComponent implements OnInit{
   searchTerm!:string;
+  p=1;
 
   xiaomi:product[]=[];
   constructor(private dsObj:DataService){

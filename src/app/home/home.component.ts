@@ -7,14 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  p=1;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
-  bannerClick()
+  iphonebannerClick()
   {
-      this.router.navigateByUrl('products');
+      this.router.navigateByUrl('products/iphones');
+  }
+  samsungbannerClick()
+  {
+    this.router.navigateByUrl('products/samsung');
+  }
+  xiaomibannerClick()
+  {
+    this.router.navigateByUrl('products/xiaomi');
   }
 }

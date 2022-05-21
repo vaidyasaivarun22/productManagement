@@ -8,6 +8,7 @@ import { AddnewiphoneComponent } from './addnewiphone/addnewiphone.component';
 import { AddnewsamsungComponent } from './addnewsamsung/addnewsamsung.component';
 import { AddnewxiaomiComponent } from './addnewxiaomi/addnewxiaomi.component';
 import { AddnewproductsComponent } from './addnewproducts/addnewproducts.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AddnewproductsComponent } from './addnewproducts/addnewproducts.compone
   imports: [
     CommonModule,
     AdministratorRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ]
 })
 export class AdministratorModule { }
