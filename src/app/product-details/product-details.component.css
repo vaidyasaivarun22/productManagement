@@ -14,16 +14,18 @@ a{
 
 /* for mobiles */
   @media only screen and (max-width:600px){
+    /* card height and width */
     .zoom{
-      height:450px;
+      height:490px;
       width: 250px;
       margin-right: 20px;
     }
+    /* image height and width */
     .prodimg{
       height: 200px;
     }
     .extra{
-      margin-left: 25px;
+      margin-left: 15px;
     } 
   }
   @media screen and (min-width:601px) and (max-width:768px)
@@ -41,18 +43,24 @@ a{
   /* for laptops */
   @media screen and (min-width:992px){
     .zoom{
-      height: 500px;
+      height: 510px;
       width: 18rem;
     }
     .prodimg{
       height: 250px;
     }
     .extra{
-      margin-left: 60px;
+      margin-left: 50px;
     } 
   }
   .forlogin{
       background-color: #F0AD4E;
       color:black;
       padding: 7px;
+  }
+
+  .ribbon-bookmark-v{
+    box-sizing: content-box;
+    background-color: crimson;
+    text-align: center;
   }
