@@ -17,7 +17,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { DescriptionComponent } from './description/description.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './search.pipe';
+import { SearchSamsungPipe } from './search-samsung.pipe';
+import { SearchXiaomiPipe } from './search-xiaomi.pipe'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { FormsModule } from '@angular/forms';
     PagenotfoundComponent,
     AdminComponent,
     UserdetailsComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    SearchPipe,
+    SearchSamsungPipe,
+    SearchXiaomiPipe
   ],
   imports: [
     BrowserModule,

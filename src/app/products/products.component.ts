@@ -22,5 +22,10 @@ export class ProductsComponent implements OnInit{
   {
     this.cartCount.push(productTitle);
   }
+  cartValue:number=0;
+  cartUpdate()
+  {
+    this.cartValue = this.tsObj.getCartCount();
+  }
 }
 

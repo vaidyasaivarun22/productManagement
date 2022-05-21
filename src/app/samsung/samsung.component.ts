@@ -8,6 +8,7 @@ import { product } from '../models/product_id.model';
   styleUrls: ['./samsung.component.css']
 })
 export class SamsungComponent implements OnInit{
+  searchTerm!:string;
   samsung:product[]=[];
   constructor(private dsObj:DataService){
 

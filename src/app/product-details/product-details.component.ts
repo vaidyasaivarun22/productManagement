@@ -64,6 +64,11 @@ export class ProductDetailsComponent {
         }
     }
   }
+  x:number=0;
+  onAdd()
+  {
+    this.tsObj.setCartCount(this.x++);
+  }
 }
 
 

@@ -13,4 +13,14 @@ export class TestService {
   {
       this.data = value;
   }
+  cartCount:number=0;
+  setCartCount(value:number)
+  {
+      this.cartCount = value;
+  }
+  getCartCount()
+  {
+      console.log(this.cartCount);
+      return this.cartCount;
+  }
 }

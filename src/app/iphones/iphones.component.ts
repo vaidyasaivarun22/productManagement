@@ -10,6 +10,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class IphonesComponent implements OnInit{
   iphones:product[]=[];
+  searchTerm!: string;
   constructor(private dsObj:DataService,private SpinnerService:NgxSpinnerService){
 
   }

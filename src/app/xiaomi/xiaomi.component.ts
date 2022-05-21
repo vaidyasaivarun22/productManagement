@@ -8,6 +8,7 @@ import { product } from '../models/product_id.model';
   styleUrls: ['./xiaomi.component.css']
 })
 export class XiaomiComponent implements OnInit{
+  searchTerm!:string;
 
   xiaomi:product[]=[];
   constructor(private dsObj:DataService){

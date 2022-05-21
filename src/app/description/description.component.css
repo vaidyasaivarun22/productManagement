@@ -48,8 +48,9 @@ span{
 /* ---------------------------------css work for Rating -------------------------------------*/
 *{
     box-sizing: border-box;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
   
   body {

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DataService } from 'src/app/data.service';
 import { mobile } from 'src/app/models/mobile.model';
-
+import { SearchPipe } from 'src/app/search.pipe';
 @Component({
   selector: 'app-modifyproducts',
   templateUrl: './modifyproducts.component.html',
@@ -12,6 +12,8 @@ export class ModifyproductsComponent implements OnInit {
   iphones: mobile[]=[];
   samsung: mobile[]=[];
   xiaomi: mobile[]=[];
+
+  searchTerm!: string;
 
   //Index to hold current Iphone object that is to be updated
   editIphoneIndex: any;
